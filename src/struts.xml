@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"  
+    "http://struts.apache.org/dtds/struts-2.0.dtd">  
+
+<struts>
+   <constant name="struts.devMode" value="true" />
+   
+   <package name="default" namespace="/" extends="struts-default">    
+
+            
+      <action name="query" class="Actions.query" method="execute">
+            <result name="success">/success.jsp</result>
+            <result name="error">/error.jsp</result>
+       </action>
+       
+
+       
+
+       <action name="showDetails" class="Actions.showDetails" method="execute">
+       		<result name="Success">/show.jsp</result>
+       	</action>
+       	
+       	<action name="delete" class="Actions.delete" method="execute">
+       		<result name="Success">/query.jsp</result>
+       	</action>
+       	
+   </package>
+   
+</struts>
